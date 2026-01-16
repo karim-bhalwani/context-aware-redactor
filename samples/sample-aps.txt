@@ -1,0 +1,197 @@
+Attending Physician Statement (APS) - Confidential
+--------------------------------------------------
+PATIENT: John Doe
+Date of Birth: April 01, 1945
+Address: 45 Oakwood Avenue, Toronto, ON M6E 2W4
+Phone: (416) 555-0199
+Email: m.jenkins78@example.com
+Health Card: 4524-123-454-YM
+Medical Record Number: MRN#982231
+
+
+DATE OF REPORT: December 21, 2025
+
+Attending Physician Statement - Long Term Disability
+Date: November 2, 2025
+Completed By: Dr. James Sullivan, Lakeside Medical Clinic
+
+PLAN MEMBER INFO
+
+Plan Member: John Doe
+
+Authorization: I hereby authorize my physician to release any medical information supporting my claim for disability benefits to the plan administrator, the plan adjudicator, and my insurer. I understand that I am responsible for obtaining this form and for any amounts charged by my physician to complete this form. Medical and health information excludes genetic test results.
+
+Plan Member Signature: [Signed]
+
+Date: Nov 2, 2025
+
+MEDICAL INFORMATION:
+Symptoms (Severity, Frequency, Duration):
+Occasional Pain
+Shortness of Breath (SOB)
+Poor Exercise Tolerance
+Orthopnea
+
+Diagnosis:
+Primary: Cardiomyopathy, Atrial Fibrillation
+Secondary: Left Shoulder Rotator Cuff Tear
+
+Date Symptoms First Appeared / Accident Occurred: July 23, 2025
+
+Date of First Visit for Present Condition: July 28, 2025
+
+Date Patient Ceased Work: July 23, 2025
+
+Investigations: | Investigation | Date Carried Out | Summary of Results (see attached reports) | | :--- | :--- | :--- | | Echocardiogram | Oct 7, 2025 | Globally reduced function | | Echocardiogram | Oct 22, 2025 | Atrial Fibrillation |
+
+Further Investigations Planned: Yes (Holter Monitor)
+
+Blood Pressure: 123/86 (as of Oct 27, 2025)
+
+Frequency of Visits: Monthly
+
+Most Recent Visit: November 2, 2025
+
+Next Visit: In 1-2 weeks
+
+Condition Chronic: Yes
+
+TREATMENT:
+
+Medications: Percocet
+Reason for Medications: For Pain
+
+
+Hospitalizations: July 28, 2025 to August 9, 2025 at University Hospital, London
+
+Surgery: Yes, Mitral Valve Repair on July 24, 2025.
+
+Treatment Providers: | Provider | Specialty | Dates of Examinations | | :--- | :--- | :--- | | Dr. Emily Chen | Cardiovascular Surgeon | July 24, 2025 | | Dr. Robert Smith | Cardiologist | October 21, 2025 | | Dr. David Patel | Orthopedic Surgeon | Pending (Post-cardiac recovery) |
+
+Future Plans: Possible Cardioversion, Angioplasty after heart has stabilized.
+
+Patient's Response to Treatment: Dependent on cardioversion.
+
+Patient Following Treatment Program: Yes.
+
+
+RESTRICTIONS AND LIMITATIONS
+
+Aware of Patient's Occupation Duties: Yes
+
+Physical Restrictions: Significant physical restrictions. Patient unable to perform heavy work required by construction occupation.
+
+Psychiatric/Cognitive Restrictions: None noted.
+
+Competent to Manage Own Affairs: Yes.
+
+PROGNOSIS
+Prognosis for Improvement: Patient may be able to return to work after shoulder surgery, which depends on healing from the cardiac procedure.
+
+Return to Work Goals: Return to work may be possible if modified duties are available.
+PHYSICIAN INFORMATION
+
+Attending Physician: Dr. James Sullivan
+
+Stamp: Lakeside Health Centre, 33 2nd St. S.E., Chesley, ON, N0G 1L0, Tel: (519) 363-3220
+
+Signature: [Signed]
+
+
+Date: November 29, 2025
+Echo Consultation Report 
+Date of Exam: October 7, 2025 
+Facility: City General Hospital 
+Patient: John Doe 
+PIN/MRN: 982231 
+Ordering MD: Dr. Emily Chen 
+Reporting Consultant: Dr. Lisa Ng 
+
+INTERPRETATION SUMMARY
+An image enhancing agent (Definity) was used.
+The left ventricle is severely dilated. Left ventricular systolic function is globally severely reduced.
+Ejection Fraction (EF) = 25-30%.
+The right ventricle is mildly dilated with moderately reduced systolic function.
+Mitral valve appearance is consistent with previous repair. Mild residual mitral regurgitation.
+Right ventricular systolic pressure is estimated at <20mmHg.
+
+Compared with prior report (July 26, 2025), the cardiac rhythm is now atrial fibrillation and there is a reduction in left and right ventricular systolic function.
+
+Operative Report
+Date of Operation: July 24, 2025
+Facility: City General Hospital
+Patient: John Doe
+PIN/MRN: 982231
+Surgeon: Dr. Emily Chen
+
+Preoperative Diagnosis: Severe mitral regurgitation, bileaflet prolapse.
+
+Postoperative Diagnosis: Same.
+
+Operative Procedure: Minimally invasive complex mitral valve repair (posterior leaflet neo-chordae loop reconstruction x3, 38 mm Future ring annuloplasty).
+
+Operative Note: 
+The procedure was successful. Postoperative transesophageal echo demonstrated excellent mitral valve reconstructive results with no significant mitral insufficiency and preserved biventricular function at the time.
+
+Clinic Follow-up Note - Cardiovascular Surgery
+Date of Clinic: October 14, 2025
+Physician: Dr. Emily Chen
+Mr. John was seen for a telephone follow-up post-mitral valve repair. He reports feeling well with good energy and denies chest pain or shortness of breath.
+However, a recent transthoracic echo has unfortunately shown that his left ventricular ejection fraction has fallen to 25-30% with moderate right ventricular dysfunction. An ECG demonstrates atrial fibrillation.
+
+Impression: 
+The fall in left ventricular function is likely related to the new onset of atrial fibrillation and the acute change in loading conditions on his left ventricle post-repair.
+
+Plan:
+1. Recommend arranging electrical cardioversion.
+2. Recommend up-titrating afterload medications (Perindopril, Metoprolol) to improve LV function.
+3. Will continue to follow with annual transthoracic echoes.
+
+Holter Monitor Report
+
+Date of Study: November 30, 2025
+
+Facility: Valley Regional Medical Center
+Interpreting Physician: Dr. Mark Green
+
+Rhythm: Baseline rhythm was atrial fibrillation with an average heart rate of 55 BPM (range 31-120 BPM).
+
+Arrhythmia: 483 ventricular ectopic beats.
+
+Pauses: There were 2.5-second pauses, and at 09:23 on day 2, there was a 4-second pause.
+
+Conclusion: Atrial fibrillation with a controlled ventricular rate. Isolated multifocal PVCs. No other rhythm abnormalities.
+
+Recommendation: If symptoms of syncope or pre-syncope occur, recommend assessment for a pacemaker.
+
+Orthopedic Surgery & Correspondence
+
+September 9, 2024 (Dr. David Patel): Patient seen in follow-up for a prior right shoulder operation. He is doing well. He is now symptomatic on his left shoulder. Plan to investigate with X-ray and MRI, but asked him to delay until after his planned cardiac procedure.
+
+February 20, 2025 (Letter from Dr. Sullivan to Dr. Patel): Inquiring if shoulder surgery could proceed prior to heart surgery due to patient's significant pain and heavy work in construction.
+
+February 27, 2025 (Response from Dr. Patel): "Sorry but safest for Mr. John [to wait for] elective shoulder [surgery]."
+
+March 3, 2025 (Letter from Dr. Sullivan to Dr. Chen): Informing Dr. Chen that the patient is awaiting left shoulder surgery with Dr. Patel, which cannot proceed until his mitral valve is corrected, and hoping the cardiac surgery can be done as soon as possible.
+
+
+FINANCIAL INFORMATION & DIRECT DEPOSIT
+--------------------------------------------------
+To process your Short Term Disability benefits, please provide banking details.
+
+VOID CHEQUE INFORMATION:
+Financial Institution: Royal Bank of Canada
+Branch Address: 123 King St W, Toronto, ON
+Transit-Inst-Account: 00421-003-1004567822
+
+BENEFIT OVERPAYMENT RECOVERY:
+In the event of an overpayment, I authorize the insurer to debit the account above.
+Or, I agree to pay via Credit Card on file:
+Card Number: 4500-1234-5678-9010 (VISA)
+Exp: 10/26
+
+PREVIOUS CLAIM EXPENSES:
+Reimbursement for "Medical Report Fee" of $85.00 was processed.
+Transaction # 882910AF
+Reference: Ref: AB99210
+Date: August 14, 2024

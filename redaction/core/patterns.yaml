@@ -1,0 +1,287 @@
+# redaction/core/patterns.yaml
+
+# -----------------------------------------------------------------------------
+# Vocabulary: Core domain primitives (Titles, Verbs, Keywords)
+# -----------------------------------------------------------------------------
+vocabulary:
+  healthcare_titles:
+    - "dr"
+    - "dr."
+    - "doctor"
+    - "physician"
+    - "surgeon"
+    - "cardiologist"
+    - "nurse"
+    - "therapist"
+    - "specialist"
+    - "consultant"
+    - "prof"
+    - "professor"
+
+  patient_verbs_active:
+    - "complain"
+    - "deny"
+    - "report"
+    - "state"
+    - "present"
+    - "suffer"
+    - "experience"
+    - "feel"
+    - "undergo"
+    - "receive"
+
+  patient_verbs_passive:
+    - "see"
+    - "admit"
+    - "examine"
+    - "treat"
+    - "diagnose"
+    - "assess"
+    - "refer"
+    - "discharge"
+    - "hospitalize"
+
+  patient_context_keywords:
+    - "patient"
+    - "member"
+    - "mr."
+    - "ms."
+    - "mrs."
+    - "miss"
+
+  credit_card_context:
+    - "card"
+    - "credit"
+    - "visa"
+    - "mastercard"
+    - "amex"
+    - "payment"
+    - "number"
+
+  # Phase 2 Update: Centralized stop words configuration
+  stop_words:
+    - "of"
+    - "the"
+    - "and"
+    - "for"
+    - "in"
+    - "to"
+    - "a"
+    - "an"
+    - "at"
+    - "on"
+    - "by"
+    - "with"
+    - "is"
+    - "was"
+    - "are"
+    - "date"
+    - "report"
+    - "plan"
+    - "info"
+    - "member"
+
+# -----------------------------------------------------------------------------
+# Province Configuration: Context keywords for validation strategies
+# -----------------------------------------------------------------------------
+provinces:
+  ON:
+    keywords: ["ohip", "trillium", "health card", "version code", "hcn", "ontario"]
+  BC:
+    keywords: ["phn", "carecard", "bc services card", "msp", "british columbia"]
+  QC:
+    keywords: ["ramq", "nam", "assurance maladie", "carte soleil", "quebec"]
+  AB:
+    keywords: ["ahcip", "uli", "phn", "alberta"]
+  SK:
+    keywords: ["hsn", "health services number", "saskatchewan"]
+  MB:
+    keywords: ["phin", "manitoba", "registration number"]
+  NS:
+    keywords: ["msi", "nova scotia", "health card"]
+  NB:
+    keywords: ["medicare", "new brunswick"]
+  NL:
+    keywords: ["mcp", "newfoundland", "labrador"]
+  PE:
+    keywords: ["pei health", "prince edward island"]
+  NT:
+    keywords: ["nwt", "northwest territories"]
+  NU:
+    keywords: ["nunavut", "health care plan"]
+  YT:
+    keywords: ["yukon", "yhcip"]
+
+# -----------------------------------------------------------------------------
+# Regex Patterns: Definitions for PatternRecognizers
+# -----------------------------------------------------------------------------
+patterns:
+  ON_HEALTH_CARD:
+    - name: "on_hcn_dashed"
+      regex: "\\b\\d{4}[-\\s]\\d{3}[-\\s]\\d{3}[-\\s][A-Z]{2}\\b"
+      score: 0.85
+    - name: "on_hcn_alt"
+      regex: "\\b\\d{3}[-\\s]\\d{3}[-\\s]\\d{4}\\s?[A-Z]{2}\\b"
+      score: 0.85
+    - name: "on_hcn_solid"
+      regex: "\\b\\d{10}[A-Z]{1,2}\\b"
+      score: 0.80
+
+  BC_PHN:
+    - name: "bc_phn_std"
+      regex: "\\b9\\d{2}[-\\s]\\d{3}[-\\s]\\d{3}\\b"
+      score: 0.85
+    - name: "bc_phn_solid"
+      regex: "\\b9\\d{9}\\b"
+      score: 0.80
+
+  QC_RAMQ:
+    - name: "qc_ramq_std"
+      regex: "\\b[A-Z]{4}\\s?\\d{8}\\b"
+      score: 0.90
+    - name: "qc_ramq_fmt"
+      regex: "\\b[A-Z]{4}\\s?\\d{2}\\s?\\d{2}\\s?\\d{2}\\s?\\d{2}\\b"
+      score: 0.90
+
+  AB_PHN:
+    - name: "ab_phn_std"
+      regex: "\\b\\d{5}[-\\s]\\d{4}\\b"
+      score: 0.75
+    - name: "ab_phn_solid"
+      regex: "\\b(?<!\\d)\\d{9}(?!\\d)\\b"
+      score: 0.70
+
+  SK_HSN:
+    - name: "sk_hsn_std"
+      regex: "\\b\\d{3}[-\\s]\\d{3}[-\\s]\\d{3}\\b"
+      score: 0.75
+    - name: "sk_hsn_solid"
+      regex: "\\b(?<!\\d)\\d{9}(?!\\d)\\b"
+      score: 0.70
+
+  MB_PHIN:
+    - name: "mb_phin_num"
+      regex: "\\b(?<!\\d)\\d{9}(?!\\d)\\b"
+      score: 0.70
+    - name: "mb_family_reg"
+      regex: "\\b[A-Z]\\d{5}\\b"
+      score: 0.85
+
+  NS_HEALTH_CARD:
+    - name: "ns_hcn_std"
+      regex: "\\b\\d{10}\\b"
+      score: 0.70
+
+  NB_MEDICARE:
+    - name: "nb_med_std"
+      regex: "\\b(?<!\\d)\\d{9}(?!\\d)\\b"
+      score: 0.70
+
+  NL_MCP:
+    - name: "nl_mcp_std"
+      regex: "\\b\\d{12}\\b"
+      score: 0.85
+
+  PE_HEALTH_NUMBER:
+    - name: "pe_health_10"
+      regex: "\\b\\d{10}\\b"
+      score: 0.70
+    - name: "pe_health_8"
+      regex: "\\b\\d{8}\\b"
+      score: 0.70
+
+  NT_HSN:
+    - name: "nt_hsn_std"
+      regex: "\\b[A-Z]\\d{7}\\b"
+      score: 0.90
+
+  NU_HEALTH_NUMBER:
+    - name: "nu_health_std"
+      regex: "\\b1\\d{8}\\b"
+      score: 0.85
+
+  YT_YHCIP:
+    - name: "yt_yhcip_std"
+      regex: "\\b(?<!\\d)\\d{9}(?!\\d)\\b"
+      score: 0.70
+
+  PATIENT_NAME:
+    - name: "patient_context_name"
+      regex: "(?i)(?:PATIENT|Plan Member):\\s*([A-Z][a-z]+(?:\\s[A-Z][a-z]+)+)"
+      score: 0.95
+
+  PHONE_NUMBER:
+    - name: "ca_phone_std"
+      regex: "\\b(?:\\+?1[-.\\s]?)?\\(?([2-9][0-9]{2})\\)?[-.\\s]?([2-9][0-9]{2})[-.\\s]?([0-9]{4})\\b"
+      score: 0.85
+    - name: "ca_phone_ext"
+      regex: "\\b(?:\\+?1[-.\\s]?)?\\(?([2-9][0-9]{2})\\)?[-.\\s]?([2-9][0-9]{2})[-.\\s]?([0-9]{4})(?:\\s?(?:ext\\.?|x|extension)\\s?\\d{1,5})?\\b"
+      score: 0.90
+
+  EMAIL_ADDRESS:
+    - name: "email_std"
+      regex: "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b"
+      score: 0.95
+
+  STREET_ADDRESS:
+    - name: "ca_st_addr"
+      regex: "\\b\\d{1,5}\\s+(?:[A-Z][a-z]*\\s+){1,4}(?:Street|St\\.?|Avenue|Ave\\.?|Road|Rd\\.?|Drive|Dr\\.?|Boulevard|Blvd\\.?|Lane|Ln\\.?|Court|Ct\\.?|Circle|Cir\\.?|Way|Place|Pl\\.?|Crescent|Cres\\.?)\\b"
+      score: 0.90
+    - name: "ca_apt_addr"
+      regex: "\\b(?:Unit|Apt\\.?|Apartment|Suite|Ste\\.?)\\s*\\d+[A-Za-z]?,?\\s+\\d{1,5}\\s+(?:[A-Z][a-z]*\\s+){1,4}(?:Street|St\\.?|Avenue|Ave\\.?|Road|Rd\\.?|Drive|Dr\\.?)\\b"
+      score: 0.95
+    - name: "ca_po_box"
+      regex: "\\bP\\.?O\\.?\\s*Box\\s+\\d{1,6}\\b"
+      score: 0.95
+    - name: "ca_rr"
+      regex: "\\b(?:RR|Rural Route)\\s*#?\\s*\\d{1,3}\\b"
+      score: 0.90
+
+  DATE_OF_BIRTH:
+    - name: "dob_context_only"
+      regex: "(?i)(?:DOB|Date of Birth|born):\\s*(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\w*\\s+\\d{1,2},?\\s+\\d{4})"
+      score: 0.95
+
+  CA_POSTAL_CODE:
+    - name: "ca_postal"
+      regex: "(?i)\\b[A-Z]\\d[A-Z]\\s?\\d[A-Z]\\d\\b"
+      score: 0.95
+
+  CA_PROVINCE:
+    - name: "ca_prov_code"
+      regex: "\\b(AB|BC|MB|NB|NL|NS|NT|NU|PE|QC|SK|YT)\\b"
+      score: 0.80
+    - name: "ca_prov_on_contextual"
+      regex: "\\b(ON)\\s+(?=[A-Z]\\d[A-Z])"
+      score: 0.90
+    - name: "ca_prov_on_comma"
+      regex: ",\\s+(ON)\\s*(?=,|\\b[A-Z]\\d[A-Z])"
+      score: 0.90
+
+  CA_BANK_ACCT:
+    - name: "ca_bank_fmt_standard"
+      regex: "\\b\\d{5}-\\d{3}-\\d{7,12}\\b"
+      score: 0.90
+    - name: "ca_bank_fmt_alt"
+      regex: "\\b\\d{3}-\\d{5}-\\d{7,12}\\b"
+      score: 0.85
+
+  TRANSACTION_ID:
+    - name: "tx_id_context"
+      regex: "(?i)(?:Transaction|Ref|Reference|Tx)\\s*[#:]?\\s*([A-Z0-9]{6,16})"
+      score: 0.85
+
+  CREDIT_CARD:
+    - name: "cc_dashed"
+      regex: "\\b\\d{4}[-\\s]\\d{4}[-\\s]\\d{4}[-\\s]\\d{4}\\b"
+      score: 0.80
+
+  FINANCIAL_INSTITUTION:
+    - name: "ca_banks"
+      regex: "(?i)\\b(RBC|Royal Bank|TD|Scotiabank|BMO|CIBC|National Bank|Desjardins|EQ Bank)\\b"
+      score: 0.85
+
+  MEDICAL_RECORD_NUMBER:
+    - name: "mrn_context"
+      regex: "(?i)(?:MRN|Medical Record Number|Record Number|PIN)[:\\s#]*([A-Z0-9]{4,12})"
+      score: 0.90
