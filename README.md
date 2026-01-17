@@ -6,6 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Engine: Microsoft Presidio](https://img.shields.io/badge/Engine-Microsoft%20Presidio-brightgreen)](https://github.com/microsoft/presidio)
 [![NLP: spaCy](https://img.shields.io/badge/NLP-spaCy-blueviolet)](https://spacy.io/)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/karim-bhalwani/context-aware-redactor)
 
 ---
 
